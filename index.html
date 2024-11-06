@@ -250,7 +250,7 @@
       </div>
     </section>
 
-    <!-- contact -->
+     <!-- contact -->
     <section id="contact">
       <div class="container p-5">
         <div class="row justify-content-center">
@@ -259,19 +259,22 @@
           </div>
 
           <div class="col-10 col-md-6">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Nama Lengkap</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Masukan Nama">
+            <form action="kirim.php" method="post">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" name="nama" id="exampleFormControlInput1" placeholder="Masukan Nama">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Catatan</label>
+                <textarea class="form-control" name="saran" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button class="btn button" type="submit"><i class="fas fa-envelope"></i> Kirim Saran</button>
+            </form>
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Catatan</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-        </div>
 
         <div class="col-10 col-md-4">
           <h2 class="mb-3">Alamat</h2>
